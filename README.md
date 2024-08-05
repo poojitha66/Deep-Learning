@@ -1,15 +1,11 @@
 # OCTMNIST Classification
 
-For this part, we will be working with a real-world dataset - OCTMNIST.
-
-## OCTMNIST
-
 The OCTMNIST is based on a prior dataset of 109,309 valid optical coherence tomography (OCT) images for retinal diseases. Each example is a 28x28 image, associated with a label from 4 classes.
 
-### Getting the Data
+### Data
 
-MedMNIST is a collection of multiple datasets, for this assignment we will be working with one dataset from the collection – OCTMNIST.
-
+MedMNIST is a collection of multiple datasets
+References for dataset:
 - [MedMNIST Website](https://medmnist.com/)
 - [MedMNIST GitHub Repository](https://github.com/MedMNIST/MedMNIST)
 - [Direct Download](https://zenodo.org/record/6496656)
@@ -38,8 +34,10 @@ The **OCTMNIST_CNN** model architecture comprises convolutional layers followed 
 - **Early stopping** is  used to monitor the validation performance and halt training when the model's performance ceases to improve, thereby preventing overfitting.
 
 
- Model Summary:
+ **Model Summary:**
+ 
  The following is a summary of the CNN model used for classifying OCTMNIST images:
+ 
 ```sh
   OCTMNIST_CNN(
 (conv1): Conv2d(1, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
@@ -56,16 +54,22 @@ The **OCTMNIST_CNN** model architecture comprises convolutional layers followed 
 )
 ```
 
-
-### Model Evaluation Results
+# Model Evaluation Results
   The evaluation results of the CNN model over 7 epochs are shown below:
 
 
-## Training and Validation Accuracy
+### Training and Validation Accuracy
 <img width="506" alt="accuracy_plot" src="https://github.com/user-attachments/assets/9993c3f8-e6fb-4019-825d-7b2fdf1be578">
 
-## Training and Validation Loss
+### Training and Validation Loss
 <img width="802" alt="loss graph-train-valid" src="https://github.com/user-attachments/assets/e1458e49-90ac-4ef6-843e-17feccf870e2">
 
-## Confusion Matrix
+### Confusion Matrix
 <img width="408" alt="oct_confusion_matrix" src="https://github.com/user-attachments/assets/47a9d441-da4b-4427-bf76-46548c0593ad">
+
+
+# Results:
+
+- The model achieved a consistent improvement in both training and validation accuracy over the 7 epochs, starting with 71.75% training accuracy and reaching 86.20% by the end. Validation accuracy also increased from 80.36% to 85.88%, demonstrating effective learning and generalization. 
+
+- The final test accuracy of 85.76%, along with a precision of 0.8309, recall of 0.8576, and F1 score of 0.8318, indicates that the model performs well on unseen data, balancing precision and recall effectively. The training process, completed in approximately 1971.55 seconds, showcases the efficiency and robustness of the model.
