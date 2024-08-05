@@ -60,11 +60,10 @@ The **OCTMNIST_CNN** model architecture comprises convolutional layers followed 
 ### Model Evaluation Results
   The evaluation results of the CNN model over 7 epochs are shown below:
 
-  
 
 ## Training and Validation Accuracy
-
+    <img width="506" alt="accuracy_plot" src="https://github.com/user-attachments/assets/87e728ab-66b8-4210-97cf-fa51519e6109">
 ## Training and Validation Loss
-   
+    <img width="802" alt="loss graph-train-valid" src="https://github.com/user-attachments/assets/e1458e49-90ac-4ef6-843e-17feccf870e2">
 ## Confusion Matrix
-https://github.com/poojitha66/Deep-Learning/blob/a4274906a09a71fef3c730d5aa835d15954bc400/oct_confusion_matrix.png
+    <img width="408" alt="oct_confusion_matrix" src="https://github.com/user-attachments/assets/47a9d441-da4b-4427-bf76-46548c0593ad">
