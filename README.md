@@ -30,7 +30,8 @@ The **OCTMNIST_CNN** model architecture comprises convolutional layers followed 
 
 **Regularization Techniques:**
 
-- **Dropout layers** are incorporated between the fully connected layers to prevent overfitting by randomly setting a fraction of the input units to zero during training. - -- **Regularization techniques** like **L1 or L2 regularization** is applied to the model's parameters to penalize large weights and enhance generalization.
+- **Dropout layers** are incorporated between the fully connected layers to prevent overfitting by randomly setting a fraction of the input units to zero during training.
+-  **Regularization techniques** like **L1 or L2 regularization** is applied to the model's parameters to penalize large weights and enhance generalization.
 - **Early stopping** is  used to monitor the validation performance and halt training when the model's performance ceases to improve, thereby preventing overfitting.
 
 
